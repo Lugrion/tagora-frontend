@@ -1,0 +1,265 @@
+body {
+    margin: 0;
+    background-color: var(--color-eerie-black);
+    font-family: var(--font-base), sans-serif;
+    color: var(--color-white-smoke);
+}
+
+.dashboard-container {
+    display: flex;
+    flex-direction: column;
+    height: 85vh;
+    overflow: hidden;
+}
+
+.dashboard-label {
+    display: flex;
+    margin: 1rem;
+    gap: 1rem;
+    padding: 1rem;
+    background-color: var(--color-black-green);
+    border-radius: 15px;
+}
+
+.label-options-container {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    padding: 0.5rem;
+    background-color: var(--color-black-olive);
+    border-radius: 999px;
+}
+
+.label-edit-option-btn {
+    flex: 1;
+    background-color: var(--color-eerie-black);
+    color: var(--color-ecru);
+    border: none;
+    cursor: pointer;
+    border-radius: 0 0 999px 999px;
+}
+
+.label-create-option-btn {
+    flex: 1;
+    background-color: var(--color-eerie-black);
+    color: var(--color-ecru);
+    border: none;
+    cursor: pointer;
+    border-radius: 999px 999px 0 0;
+}
+
+.labels-container {
+    display: flex;
+    background-color: var(--color-black-olive);
+    padding: 1rem;
+    gap: 1rem;
+    width: 100%;
+    overflow-x: scroll;
+    border-radius: 15px;
+}
+
+.label-card {
+}
+
+.label-filter-button {
+    color: var(--color-ecru);
+    background-color: var(--color-black-green);
+    font-family: var(--font-base), sans-serif;
+    font-weight: bold;
+    cursor: pointer;
+    text-align: center;
+    border-radius: 10px;
+    padding: 0 5rem;
+    border: none;
+}
+
+.selected {
+    outline: 5px solid var(--color-tiffany-blue);
+    outline-offset: 2px;
+}
+
+.dashboard-memory {
+    display: flex;
+    background-color: var(--color-black-green);
+    overflow: hidden;
+    padding: 1rem;
+    margin: 1rem;
+    border-radius: 15px;
+}
+
+.memory-options-container {
+    display: flex;
+    flex-direction: column;
+    background-color: var(--color-black-olive);
+    padding: 0.75rem;
+}
+
+.memory-edit-option-btn {
+    flex: 1;
+}
+
+.memory-create-option-btn {
+    flex: 1;
+}
+
+.memories-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+    padding: 1rem;
+    flex: 1;
+    overflow-y: scroll;
+}
+
+.memory-card {
+    background-color: var(--color-black-olive);
+    padding: 1rem;
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+}
+
+.memory-header {
+    display: flex;
+    gap: 1rem;
+    align-content: center;
+    justify-content: center;
+}
+
+.memory-name {
+    font-weight: normal;
+    align-content: center;
+    text-align: center;
+}
+
+
+.memory-link {
+    background-color: var(--color-eerie-black);
+    color: var(--color-ecru);
+    text-decoration-line: none;
+    padding: 0.5rem 1rem;
+    border-radius: 999px;
+    font-weight: bold;
+    align-content: center;
+}
+
+.memory-assigned-labels-container {
+    display: flex;
+    gap: 1rem;
+}
+
+.memory-label {
+    color: var(--color-eerie-black);
+    padding: 0 0.5rem;
+    border-radius: 999px;
+    background-color: var(--color-tiffany-blue);
+}
+
+.memory-edit-container {
+    display: flex;
+    gap: 1rem;
+}
+
+.memory-options-container {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    padding: 0.5rem;
+    margin-left: 1rem;
+    background-color: var(--color-black-olive);
+    border-radius: 999px;
+}
+
+.memory-edit-option-btn {
+    flex: 1;
+    background-color: var(--color-eerie-black);
+    color: var(--color-ecru);
+    border: none;
+    cursor: pointer;
+    border-radius: 0 0 999px 999px;
+}
+
+.memory-create-option-btn {
+    flex: 1;
+    background-color: var(--color-eerie-black);
+    color: var(--color-ecru);
+    border: none;
+    cursor: pointer;
+    border-radius: 999px 999px 0 0;
+}
+
+.memory-create-option-btn:hover {
+    transform: scale(105%);
+}
+
+.memory-edit-option-btn:hover {
+    transform: scale(105%);
+}
+
+.label-create-option-btn:hover {
+    transform: scale(110%);
+}
+
+.label-edit-option-btn:hover {
+    transform: scale(110%);
+}
+
+.memory-link:hover {
+    transform: scale(110%);
+}
+
+.label-filter-button:hover {
+    transform: scale(110%);
+}
+
+.label-filter-button:hover {
+    transform: scale(110%);
+}
+
+.modal-btn:hover {
+    transform: scale(105%);
+}
+
+.edit-btn {
+    background-color: var(--color-eerie-black);
+    color: var(--color-ecru);
+    border-radius: 999px;
+    padding: 0.5rem;
+    border: none;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.edit-btn:hover {
+    transform: scale(130%);
+}
+
+.delete-btn:hover {
+    transform: scale(130%);
+}
+
+.delete-btn {
+    background-color: red;
+    color: var(--color-white-smoke);
+    border-radius: 999px;
+    padding: 0.5rem;
+    border: none;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.form-wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.input-wrapper {
+    display: flex;
+    flex-direction: column;
+}

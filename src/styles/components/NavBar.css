@@ -1,0 +1,53 @@
+nav {
+    background-color: var(--color-black-green);
+    color: var(--color-white-smoke);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+    gap: 1rem;
+    position: sticky;
+    top: 0;
+}
+
+.navbar-search {
+    background-color: var(--color-eerie-black);
+    color: var(--color-white-smoke);
+    border-radius: 15px;
+    border: none;
+    padding: 0.5rem 1rem;
+    width: 100%;
+}
+
+.navbar-search::placeholder {
+    text-align: center;
+}
+
+.auth-container {
+    display: flex;
+    gap: 0.5rem;
+    padding: 0.5rem;
+    border-radius: 9999px;
+    background-color: var(--color-black-olive);
+}
+
+.modal-btn {
+    color: var(--color-ecru);
+    background-color: var(--color-black-green);
+    font-family: var(--font-base), sans-serif;
+    font-weight: bold;
+    border: none;
+    cursor: pointer;
+    text-align: center;
+    padding: 0.25rem 4rem;
+}
+
+.login-btn {
+    border-top-left-radius: 999px;
+    border-bottom-left-radius: 999px;
+}
+
+.register-btn {
+    border-top-right-radius: 999px;
+    border-bottom-right-radius: 999px;
+}

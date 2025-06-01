@@ -1,13 +1,13 @@
 import {useEffect, useState} from "react";
 import {MemoryDTO} from "../types/memory";
-import {useCacheMemoriesStore} from "../stores/memory.store.ts";
 import {LabelDTO} from "../types/label";
-import {useCacheLabelsStore} from "../stores/label.store.ts";
+import {useMemoriesStore} from "../stores/memory.store.ts";
+import {useLabelsStore} from "../stores/label.store.ts";
 import useDebounce from "./useDebounce.tsx";
 
 export const useDashboardManager = () => {
-    const cacheLabels = useCacheLabelsStore(state => state.cacheLabels);
-    const cacheMemories = useCacheMemoriesStore(state => state.cacheMemories);
+    const cacheLabels = useLabelsStore(state => state.cacheLabels);
+    const cacheMemories = useMemoriesStore(state => state.cacheMemories);
     const [labelTextQuery, setLabelTextQuery] = useState<string>("")
     const [selectedLabels, setSelectedLabels] = useState<number[]>([]);
     const [shownLabels, setShownLabels] = useState<LabelDTO[]>([]);

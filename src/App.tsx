@@ -1,14 +1,17 @@
 import {BrowserRouter, Route, Routes} from "react-router-dom";
 import Dashboard from "./pages/Dashboard.tsx";
 import Error404 from "./pages/Error404.tsx";
+import {useAppInitializerStore} from "./stores/appInitializer.store.ts";
+import {useCacheManager} from "./hooks/useCacheManager.tsx";
 import {useEffect} from "react";
-import {useAppInitializer} from "./hooks/useAppInitializer.tsx";
 
 function App() {
-    const {appInit} = useAppInitializer()
+    const appInit = useAppInitializerStore(set => set.appInit)
+    useCacheManager()
+
     useEffect(() => {
         appInit()
-    });
+    }, [appInit])
 
     return (
         <BrowserRouter>
